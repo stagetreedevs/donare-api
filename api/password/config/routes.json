@@ -1,0 +1,19 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/password/change",
+      "handler": "password.change"
+    },
+    {
+      "method": "POST",
+      "path": "/password/send-reset-email",
+      "handler": "password.sendResetEmail"
+    },
+    {
+      "method": "POST",
+      "path": "/password/reset-password",
+      "handler": "password.resetPassword"
+    }
+  ]
+}

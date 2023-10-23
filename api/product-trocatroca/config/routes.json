@@ -1,0 +1,84 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/product-trocatrocas",
+      "handler": "product-trocatroca.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/product-trocatrocas/count",
+      "handler": "product-trocatroca.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/product-trocatrocas/:id",
+      "handler": "product-trocatroca.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/product-trocatrocas",
+      "handler": "product-trocatroca.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/product-trocatrocas/:id",
+      "handler": "product-trocatroca.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/product-trocatrocas/:id",
+      "handler": "product-trocatroca.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/product-trocatrocas/get-all",
+      "handler": "product-trocatroca.getAll",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/product-trocatrocas/get-my-products",
+      "handler": "product-trocatroca.getMyProducts",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/product-trocatrocas/update-cancelled/:id",
+      "handler": "product-trocatroca.updateCancelled",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/product-trocatrocas/search-by-name-and-category",
+      "handler": "product-trocatroca.searchProducts",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

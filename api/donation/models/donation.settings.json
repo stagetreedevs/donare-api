@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "donations",
+  "info": {
+    "name": "Donation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "in_progress",
+        "accepted",
+        "rejected"
+      ],
+      "default": "in_progress"
+    },
+    "product_service": {
+      "model": "product-services"
+    },
+    "product_donation": {
+      "model": "product"
+    },
+    "product_institution": {
+      "model": "product-institutions"
+    },
+    "product_trocatroca": {
+      "model": "product-trocatroca"
+    },
+    "user_donor": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "user_receiver": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

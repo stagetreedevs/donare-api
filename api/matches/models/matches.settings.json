@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "matches",
+  "info": {
+    "name": "Matches",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "status_user_donor": {
+      "type": "enumeration",
+      "enum": [
+        "in_progress",
+        "accepted",
+        "rejected"
+      ],
+      "default": "in_progress"
+    },
+    "product_trocatroca_donor": {
+      "model": "product-trocatroca"
+    },
+    "product_trocatroca_receiver": {
+      "model": "product-trocatroca"
+    },
+    "user_donor": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "user_receiver": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "status_user_receiver": {
+      "type": "enumeration",
+      "enum": [
+        "in_progress",
+        "accepted",
+        "rejected"
+      ],
+      "default": "in_progress"
+    }
+  }
+}

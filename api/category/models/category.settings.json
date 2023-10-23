@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name_pt_br": {
+      "type": "string"
+    },
+    "description_pt_br": {
+      "type": "text"
+    },
+    "name_en_us": {
+      "type": "string"
+    },
+    "description_en_us": {
+      "type": "text"
+    },
+    "name_es": {
+      "type": "string"
+    },
+    "description_es": {
+      "type": "text"
+    },
+    "name_it": {
+      "type": "string"
+    },
+    "description_it": {
+      "type": "text"
+    },
+    "name_de": {
+      "type": "string"
+    },
+    "description_de": {
+      "type": "text"
+    }
+  }
+}

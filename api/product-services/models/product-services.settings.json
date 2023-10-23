@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products_services",
+  "info": {
+    "name": "Product Services",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "photos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "user": {
+      "via": "product_services",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "address": {
+      "type": "string"
+    },
+    "neighborhood": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "in_progress",
+        "complete",
+        "cancelled"
+      ],
+      "default": "in_progress"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "doacoes",
+        "servicos",
+        "instituicoes",
+        "trocatroca"
+      ],
+      "default": "servicos"
+    },
+    "category": {
+      "model": "category"
+    }
+  }
+}

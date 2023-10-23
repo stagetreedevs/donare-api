@@ -1,0 +1,84 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/product-institutions",
+      "handler": "product-institutions.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/product-institutions/get-all",
+      "handler": "product-institutions.getAll",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/product-institutions/get-one/:id",
+      "handler": "product-institutions.getOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/product-institutions/count",
+      "handler": "product-institutions.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/product-institutions/:id",
+      "handler": "product-institutions.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/product-institutions",
+      "handler": "product-institutions.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/product-institutions/:id",
+      "handler": "product-institutions.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/product-institutions/:id",
+      "handler": "product-institutions.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/product-institutions/update-cancelled/:id",
+      "handler": "product-institutions.updateCancelled",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/product-institutions/search-by-name-and-category",
+      "handler": "product-institutions.searchProducts",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

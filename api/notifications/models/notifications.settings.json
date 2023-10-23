@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notifications",
+  "info": {
+    "name": "Notification",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "product_donation": {
+      "model": "product"
+    },
+    "product_institution": {
+      "model": "product-institutions"
+    },
+    "product_service": {
+      "model": "product-services"
+    },
+    "product_trocatroca": {
+      "model": "product-trocatroca"
+    },
+    "donation": {
+      "model": "donation"
+    },
+    "Visualized": {
+      "type": "boolean",
+      "default": false,
+      "unique": false,
+      "required": true
+    },
+    "user_donor": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "user_receiver": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
